@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "minimist": "^1.2.0"
+    "formidable": "^1.0.17",
+    "minimist": "^1.2.0",
+    "qrcode-terminal": "^0.10.0"
   },
   "bin": {
     "sushibtn": "bin/sushibtn"
