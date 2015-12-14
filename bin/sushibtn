@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+var remote = require("../lib/remote");
+var argv = require('minimist')(process.argv.slice(2));
+
+var cmd = argv._[0];
+var target = argv._[1];
+
+if(cmd === undefined || target === undefined){
+	console.log('USAGE: sushibtn "ActionId" "Command to Execute" \n');
+	console.log('   ex: sushibtn hello "ls" \n');
+}
+
+remote.exec(cmd, target);
