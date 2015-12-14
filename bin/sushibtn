@@ -9,6 +9,7 @@ var target = argv._[1];
 if(cmd === undefined || target === undefined){
 	console.log('USAGE: sushibtn "ActionId" "Command to Execute" \n');
 	console.log('   ex: sushibtn hello "ls" \n');
+}else{
+	remote.exec(cmd, target);
 }
 
-remote.exec(cmd, target);
